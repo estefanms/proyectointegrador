@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feriando</title>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ferias</title>
+
+<body>
+    <div class="banner-container">
+        <img class="banner-image" src="https://cdn.pixabay.com/photo/2012/02/24/16/53/market-16670_1280.jpg" alt="Banner">
+        <div class="banner-text">
+            <p>FERIANDO</p>
+        </div>
+    </div>
+    <div class="texto">
+        <p><strong>¡Hola! Feriando</strong> es una página diseñada con el fin de organizar 
+            y evidenciar marcas y ferias que ocurren en diferentes lugares. 
+            Se recomienda que la información suministrada sea de carácter público, 
+            en otras palabras, información disponible en redes sociales para que no tengas 
+            inconvenientes cuando realices algún tipo de conexión.</p>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h1>Formularios de Inscripción</h1>
+    <table>
+        <tr>
+            <td colspan="2">
+                <h2> <strong>INSCRIPCIÓN MARCA</strong></h2>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form action="procesar_inscripcion_marca.php" method="POST">
+                    <label for="nombre_marca">Nombre de la marca:</label>
+                    <input type="text" id="nombre_marca" name="nombre_marca" required>
+                    <br>
+                    <label for="categoria">Categoría a la que pertenece:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="Ropa masculina">Ropa masculina</option>
+                        <option value="Ropa femenina">Ropa femenina</option>
+                        <option value="Ropa interior">Ropa interior</option>
+                        <option value="Ropa infantil">Ropa infantil</option>
+                        <option value="Cosmetica Ornamental">Cosmética Ornamental y Natural</option>
+                        <option value="Joyas y bisuteria">Joyas y bisuteria</option>
+                        <option value="Imprenta">Imprenta (Cuadernos y libros)</option>
+                        <option value="Producto lactos">Productos lácteos</option>
+                        <option value="Procesamiento">Procesamiento carne</option>
+                        <option value="Panaderia artesanal">Panaderia artesanal</option>
+                        <option value="Procesamiento carne">Procesamiento de carne</option>
+                        <option value="Procesamiento frutas">Procesamiento de frutas</option>
+                        <option value="Comidas platos">Comidas y platos</option>
+                        <option value="cacao y confites">Cacao y confites</option>
+                        <option value="Salsas y mieles">Salsas y mieles</option>
+                        <!-- Agrega más opciones aquí -->
+                    </select>
+                    <br>
+                    <label for="email_marca">Email:</label>
+                    <input type="email" id="email_marca" name="email_marca" required>
+                    <br>
+                    <label for="municipio_marca">Municipio:</label>
+                    <input type="text" id="municipio_marca" name="municipio_marca" required>
+                    <br>
+                    <label for="numero_celular_marca">Número de celular:</label>
+                    <input type="text" id="numero_celular_marca" name="numero_celular_marca" required>
+                    <br>
+                    <label for="terminos_condiciones_marca">Acepto los Términos y Condiciones:</label>
+                    <input type="checkbox" id="terminos_condiciones_marca" name="terminos_condiciones_marca" required>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h2>INSCRIPCIÓN FERIA</h2>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form action="procesar_inscripcion_feria.php" method="POST">
+                    <label for="nombre_feria">Nombre de la feria:</label>
+                    <input type="text" id="nombre_feria" name="nombre_feria" required>
+                    <br>
+                    <label for="descripcion_feria">Descripción de la feria:</label>
+                    <textarea id="descripcion_feria" name="descripcion_feria" rows="4" required></textarea>
+                    <br>
+                    <label for="email_feria">Email:</label>
+                    <input type="email" id="email_feria" name="email_feria" required>
+                    <br>
+                    <label for="ubicacion_feria">Lugar (ubicación) donde se hará:</label>
+                    <input type="text" id="ubicacion_feria" name="ubicacion_feria" required>
+                    <br>
+                    <label for="numero_celular_feria">Número de celular:</label>
+                    <input type="text" id="numero_celular_feria" name="numero_celular_feria" required>
+                    <br>
+                    <label for="valor_comercial_feria">Valor comercial:</label>
+                    <input type="text" id="valor_comercial_feria" name="valor_comercial_feria" required>
+                    <br>
+                    <label for="fecha_inicio">Fecha de inicio:</label>
+                    <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+                    <br>
+                    <label for="fecha_finalizacion">Fecha de finalización:</label>
+                    <input type="date" id="fecha_finalizacion" name="fecha_finalizacion" required>
+                    <br>
+                    <label for="terminos_condiciones_feria">Acepto los Términos y Condiciones:</label>
+                    <input type="checkbox" id="terminos_condiciones_feria" name="terminos_condiciones_feria" required>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+<footer>
+    <p>Esta página es hecha con ♥ para los emprendedores </p> <br>
+    <p>Todos los derechos reservados para espacio activo®</p>
+
+</footer>
+</body>
+</html>
