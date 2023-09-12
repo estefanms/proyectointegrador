@@ -15,6 +15,13 @@ header {
     padding: 10px 20px;
 }
 
+marquee {
+
+    font-size: 30px;
+    color: #a42178; 
+
+}
+
 
 .logo img {
     max-width: 100px;
@@ -61,8 +68,8 @@ th, td {
 }
 
 .banner-image {
-            width: 100%;
-            max-height: 300px;
+        width: 800px; /* Ancho deseado */
+        height: 400px; /* Alto deseado */
 }
 
 .banner-text {
