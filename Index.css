@@ -19,7 +19,7 @@ marquee {
 
     font-size: 30px;
     color: #a42178; 
-
+    font-family: Helvetica, sans-serif;
 }
 
 
@@ -86,5 +86,10 @@ th, td {
 .texto {
     background-color: #f2f2f2;
     padding: 20px;
+    text-align: justify;
+    
+}
+
+.footer {
     text-align: justify;
 }
