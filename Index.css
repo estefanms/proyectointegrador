@@ -3,7 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #aa559d37;    
+    background-color: #aa559d37;
+    text-align: center;
 }
 
 header {
@@ -53,6 +54,7 @@ nav ul li a {
 table {
             width: 30%;
             border-collapse: collapse;
+            align: center;
  }
 table, th, td {
             border: 1px solid #1f1f1fda;
